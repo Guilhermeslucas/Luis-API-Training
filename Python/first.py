@@ -1,4 +1,5 @@
 # First attempt to make a REST API call for LUIS
+# This is the simplest way of doing a question to a trained LUIS app
 
 import requests
 

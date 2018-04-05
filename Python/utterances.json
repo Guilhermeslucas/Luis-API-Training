@@ -1,0 +1,7 @@
+[
+    {
+        "text": "go to Seattle",
+        "intentName": "pizzaOrder",
+        "entityLabels": []
+    }
+]

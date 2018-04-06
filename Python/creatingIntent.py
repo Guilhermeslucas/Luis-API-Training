@@ -6,12 +6,9 @@ headers = {
     'Ocp-Apim-Subscription-Key': '',
 }
 
-params = urllib.parse.urlencode({
-})
-
 try:
     conn = http.client.HTTPSConnection('westus.api.cognitive.microsoft.com')
-    conn.request("POST", "/luis/api/v2.0/apps/a4d2dae2-f847-4f86-8b17-147b90da0040/versions/0.1/intents?%s" % params, "{'name' : 'newIntent2'}", headers)
+    conn.request("POST", "/luis/api/v2.0/apps/a4d2dae2-f847-4f86-8b17-147b90da0040/versions/0.1/intents?", "{'name' : 'newIntent3'}", headers)
     response = conn.getresponse()
     data = response.read()
     print(data)
